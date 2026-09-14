@@ -37,17 +37,6 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 For a workshop please delete the following block until the next dashed-line
 {% endcomment %}
 
-
-<div class="alert alert-danger">
-Це шаблон для сторінки семінару. Видаліть ці рядки та використайте його для налаштування свого семінару (інструкція англійською знаходиться
-<a href="https://carpentries.github.io/workshop-template/customization/index.html">тут</a>).
-Якщо ви ще не відправили запит на семінар або ведете його самостійно, будь ласка, заповніть цю
-<a href="{{site.amy_site}}/forms/self-organised/">форму</a>,
-щоб повідомити нас про ваш семінар. Ми зв'яжемось з вами, якщо нам знадобиться додаткова інформація.
-Якщо це перший семінар для нового уроку, вкажіть значення `true` в полі `pilot` у файлі `_config.yml`.
-Для семінарів, які викладають уроки з Carpentries Incubator, треба видалити коментарі з полей `incubator_lesson_site`, `incubator_pre_survey`, та `incubator_post_survey` у файлі `_config.yml`.
-</div>
-
 {% comment %}
 8< ============================= until here ==================
 {% endcomment %}
