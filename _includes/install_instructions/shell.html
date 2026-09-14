@@ -1,0 +1,164 @@
+<div id="shell">
+  <h3>Оболонка Bash</h3>
+  <p>
+    Bash — це розповсюджена оболонка, яка використовується для виконання команд з командного рядка.
+  </p>
+
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#shell-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#shell-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#shell-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="shell-windows">
+        <ol>
+          <li>Завантажте <a href="https://gitforwindows.org/">інсталятор Git для Windows</a>.</li>
+          <li>Запустіть інсталятор і виконайте наступні дії:
+            <ol>
+              {% comment %} Налаштування Git 2.29.1 {% endcomment %}
+              <li>
+                Натисніть "Далі" чотири рази (двічі, якщо ви раніше встановлювали Git).
+                Вам не потрібно нічого змінювати на екранах "Information" (Iнформація), 
+                "Location" (Розташування), "Components" (Компоненти) та "Start Menu" (меню "Пуск").
+              </li>
+              <li>
+                <strong>
+                  У випадаючому меню "Choosing the default editor used by Git" 
+                  (Вибір редактора, що використовується Git за замовчуванням) виберіть 
+                  "Use the Nano editor by default" (Використовувати редактор Nano за замовчуванням) 
+                  (ПРИМІТКА: вам потрібно буде прокрутити <emph>вгору</emph>, щоб знайти його), 
+                  і натисніть "Next" (Далі).
+                </strong>
+              </li>
+              {% comment %} Коригування назви початкової гілки в нових репозиторіях {% endcomment %}
+              <li>
+                На сторінці з написом "Adjusting the name of the initial branch in new repositories" 
+                (Коригування назви початкової гілки в нових репозиторіях") переконайтеся, що вибрано
+                "Let Git decide" (Дозволити Git вирішити). Це забезпечить найвищий рівень сумісності 
+                наших уроків.  
+              </li>
+              {% comment %} Налаштування середовища PATH {% endcomment %}
+              <li>
+                Переконайтеся, що вибрано "Git from the command line and also from 3rd-party software" 
+                (Git з командного рядка, а також з програмного забезпечення 3-ї сторони) та
+                натисніть на "Next" (Далі). (Якщо ви цього не зробите, Git Bash не працюватиме 
+                належним чином, вимагаючи від вас видалити інсталяцію Git Bash, повторно запустити 
+                інсталятор та вибрати опцію "Git from the command line and also from 3rd-party software".)
+              </li>
+              {% comment %} Вибір виконуваного файлу SSH {% endcomment %}
+              <li>
+                Виберіть "Use bundled OpenSSH" (Використовувати OpenSSH з цього дистрибутиву).
+              </li>
+              {% comment %} Вибір транспортного бекенду HTTPS {% endcomment %}
+              <li>
+                Переконайтеся, що вибрано "Use the native Windows Secure Channel Library" 
+                (Використовувати вбудовану бібліотеку захищених каналів Windows), і натисніть "Next" (Далі).
+              </li>
+              {% comment %} Це означає, що люди, які знаходяться за корпоративними брандмауерами, 
+              які здійснюють MITM (man-in-the-middle) атаки за допомогою свого власного 
+              кореневого СА (Цифровий сертифікат), все ще зможуть отримати доступ до 
+              віддалених репозиторіїв git. {% endcomment %}
+              {% comment %} Налаштування перетворень кінців рядків {% endcomment %}
+              <li>
+                Переконайтеся, що вибрано "Checkout Windows-style, commit Unix-style line endings" 
+                (Працювати у стилі Windows, зберігати у стилі Unix) і 
+                натисніть "Next" (Далі).
+              </li>
+              {% comment %} Налаштування емулятора терміналу для використання з Git Bash {% endcomment %}
+              <li>
+                <strong>
+                  Переконайтеся, що вибрано "Use Windows' default console window" 
+                  (Використовувати вікно консолі Windows за замовчуванням), і натисніть "Next" (Далі).
+                </strong>
+              </li>
+              {% comment %} Налаштування додаткових опцій {% endcomment %}
+              <li>
+                Переконайтеся, що вибрано "Default (fast-forward or merge)" 
+                (За замовчуванням (перемотування вперед або злиття)), і натисніть "Next" (Далі).
+              </li>
+              <li>
+                Переконайтеся, що вибрано "Git Credential Manager" 
+                (Менеджер облікових даних Git), і натисніть "Next" (Далі).
+              </li>
+              <li>
+                Переконайтеся, що вибрано "Enable file system caching" 
+                (Дозволити кешування файлової системи), і натисніть "Next" (Далі).
+              </li>
+              {% comment %} Налаштування експериментальних опцій {% endcomment %}
+              <li>Click on "Install" (Встановити).</li>
+              {% comment %} Встановлення {% endcomment %}
+              {% comment %} Завершення роботи Git Setup Wizard (Майстра налаштування Git) {% endcomment %}
+              {% comment %} станом на 02.06.2020 у вікні буде написано "click Finish" (Готово), 
+              але кнопка позначена як "Next" (Далі) {% endcomment %}
+              <li>Натисніть на "Finish" (Готово) або "Next" (Далі).</li>
+            </ol>
+          </li>
+          <li>
+            Якщо вашу змінну середовища "HOME" (ДОМАШНІЙ КАТАЛОГ) не встановлено (або ви не знаєте, що це таке):
+            <ol>
+              <li>Відкрийте командний рядок (відкрийте Start Menu (меню "Пуск"), потім введіть 
+                <code>cmd</code> 
+                і натисніть <kbd>Enter</kbd>)</li>
+              <li>
+                Введіть наступний рядок у вікно командного рядка саме так, як показано:
+                <p><code>setx HOME "%USERPROFILE%"</code></p>
+              </li>
+              <li>Натисніть <kbd>Enter</kbd> і ви повинні побачити  
+                <code>SUCCESS: Specified value was saved.</code></li>
+              <li>Вийдіть із командного рядка, ввівши 
+                <code>exit</code> 
+                потім натиснувши <kbd>Enter</kbd></li>
+            </ol>
+	  </li>
+        </ol>
+        <p>Це надасть вам як Git, так і Bash у програмі Git Bash.</p>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="shell-macos">
+        <p>
+          Оболонка за замовчуванням в Mac OS X Ventura і більш нових версіях - це Zsh, 
+          але Bash доступний у всіх версіях, тому встановлювати нічого не потрібно.
+          Доступ до Bash можна отримати з терміналу (знаходиться в 
+          <code>/Applications/Utilities</code>).
+          Можливо, ви захочете закріпити Термінал на панелі задач для цього семінару.
+        </p>
+        <p>
+            Щоб перевірити, що Bash є вашою оболонкою за замовчуванням, введіть <code>echo $SHELL</code>
+            у Терміналі та натисніть клавішу <kbd>Return</kbd>. Якщо виведене повідомлення 
+            не завершується на '/bash', вашою оболонкою за замовчуванням є щось інше.
+            Ви можете змінити вашу поточну командну оболонку на Bash введенням
+            <code>bash</code> і натисканням <kbd>Return</kbd>. Щоб перевірити поточну 
+            командну оболонку, введіть <code>echo $0</code> і натисніть <kbd>Return</kbd>.
+        </p>
+        <p>
+          Щоб змінити оболонка за замовчуванням у Bash, введіть <code>chsh -s /bin/bash</code> 
+          і натисніть клавішу <kbd>Return</kbd>, а потім перезавантажте компʼютер, щоб зміни набули чинності.
+          Щоб змінити значення за замовчуванням назад на Zsh, введіть <code>chsh -s /bin/zsh</code>, натисніть клавішу
+          <kbd>Return</kbd> і перезавантажте компʼютер. Щоб перевірити доступні оболонки, введіть
+          <code>cat /etc/shells</code>.
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="shell-linux">
+        <p>
+          Оболонкою за замовчуванням, як правило, є Bash, і зазвичай немає потреби нічого встановлювати.
+        </p>
+        <p>
+            Щоб перевірити, що Bash є вашою оболонкою за замовчуванням, введіть <code>echo $SHELL</code>
+            у Терміналі та натисніть клавішу <kbd>Return</kbd>. Якщо виведене повідомлення 
+            не завершується на '/bash', вашою оболонкою за замовчуванням є щось інше.
+            Ви можете змінити вашу поточну командну оболонку на Bash введенням
+            <code>bash</code> і натисканням <kbd>Return</kbd>. Щоб перевірити поточну 
+            командну оболонку, введіть <code>echo $0</code> і натисніть <kbd>Return</kbd>.
+        </p>
+        <p>
+          Щоб змінити оболонку за замовчуванням у Bash, введіть <code>chsh -s /bin/bash</code> 
+          і натисніть клавішу <kbd>Return</kbd>, а потім перезавантажте компʼютер, щоб зміни набули чинності.
+          Щоб змінити значення за замовчуванням назад на Zsh, введіть <code>chsh -s /bin/zsh</code>, натисніть клавішу
+          <kbd>Return</kbd> і перезавантажте компʼютер. Щоб перевірити доступні оболонки, введіть
+          <code>cat /etc/shells</code>.
+        </p>
+      </article>
+    </div>
+  </div>
+</div>

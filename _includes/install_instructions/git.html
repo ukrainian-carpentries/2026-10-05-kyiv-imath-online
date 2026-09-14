@@ -1,0 +1,68 @@
+{% comment %}
+Інструкції з налаштування Git базуються на інструкціях для Shell. 
+Якщо ви не додаєте інструкції Shell до веб-сайту семінара, 
+обов'язково відкоригуйте текст нижче відповідним чином.
+{% endcomment %}
+<div id="git">
+  <h3>Git</h3>
+  <p>
+    Git — це система контролю версій, яка дозволяє відстежувати, 
+    хто і коли вносив зміни, а також має опції для легкого оновлення 
+    спільної чи загальнодоступної версії вашого коду 
+    на <a href="https://github.com/">github.com</a>. Вам знадобиться
+    <a href="https://help.github.com/articles/supported-browsers/">веббраузер, що підтримується 
+    на вашому пристрої</a>.
+  </p>
+  <p>
+    Також, ви маєте створити обліковий запис за адресою <a href="https://github.com/">github.com</a>
+    для частин уроку Git. Базові облікові записи GitHub безкоштовні.
+    Ми рекомендуємо вам створити обліковий запис GitHub, якщо у вас його 
+    ще немає. Будь ласка, подумайте, яку особисту інформацію ви хочете 
+    розкрити. Наприклад, ви можете переглянути ці
+    <a href="https://help.github.com/articles/keeping-your-email-address-private/">інструкції</a>  
+      щодо збереження конфіденційності вашої адреси електронної пошти,
+      які надані на GitHub.
+  </p>
+
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a data-os="windows" href="#git-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
+      <li role="presentation"><a data-os="macos" href="#git-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
+      <li role="presentation"><a data-os="linux" href="#git-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <article role="tabpanel" class="tab-pane active" id="git-windows">
+        <p>
+          Git буде встановлено на вашому комп'ютері як частину 
+          вашої інсталяції Bash (див.
+          <a href="#shell">Інструкцію по встановленню оболонки</a>).
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="git-macos">
+        <p>
+          <strong>Для macOS</strong>, встановіть Git для Mac, 
+          завантаживши та запустивши найсвіжіший інсталятор "mavericks" з цього 
+          <a href="http://sourceforge.net/projects/git-osx-installer/files/">списку</a>.
+          Оскільки цей інсталятор не підписано розробником, вам, можливо, 
+          доведеться клацнути правою кнопкою миші на файл .pkg, 
+          або натиснути Control та просто клацнути мишею.
+          Після встановлення Git у вашій папці <code>/Applications</code>
+          нічого не буде, оскільки Git є програмою, яка використовується 
+          за допомогою командного рядка. 
+          <strong>Для старіших версій OS X (10.5-10.8)</strong> використовуйте 
+          останній доступний інсталятор з позначкою "snow-leopard", доступний 
+          <a href="http://sourceforge.net/projects/git-osx-installer/files/">тут</a>.
+        </p>
+      </article>
+      <article role="tabpanel" class="tab-pane" id="git-linux">
+        <p>
+          Якщо Git ще не доступний на вашому комп'ютері, ви можете спробувати встановити його за 
+          допомогою менеджера пакетів вашого дистрибутива. У Debian/Ubuntu Linux використовуйте 
+          <code>sudo apt-get install git</code>, а у Fedora Linux 
+          <code>sudo dnf install git</code>.
+        </p>
+      </article>
+    </div>
+  </div>
+</div>
