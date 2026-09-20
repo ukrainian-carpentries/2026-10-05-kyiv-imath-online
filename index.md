@@ -239,11 +239,16 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
   для подальшої інформації.
 </p>
 
+Будь ласка, зареєструйтеся за посиланням:
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfMWabXeA0Boo-009fFIGYURGydf2ETpcTa19HkkowSwE5B-Q/viewform"> Реєстрація </a>
+
 <p id="roles">
   <strong>Ролі:</strong>
   Щоб дізнатися більше про ролі учасників семінару (інструктор, помічник, організатор, слухач), зверніться 
   до <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">Workshop FAQ</a>.
 </p>
+
+
 
 {% comment %}
 ХТО МОЖЕ БРАТИ УЧАСТЬ?
