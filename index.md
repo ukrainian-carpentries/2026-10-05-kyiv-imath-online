@@ -401,21 +401,8 @@ https://pad.carpentries.org/YYYY-MM-DD-site
 </p>
 <p>
   Окрім того, ви можете скористуватися новішіми версіями інструкцій з налаштування (наприклад, з використанням Windows Subsystem for Linux v2 у сучасних версіях Windows), які знаходяться у 
-  <a href="https://carpentries.github.io/workshop-template/#setup">англійськомовній версії шаблону сторінки семінару The Carpentries</a>.
+  <a href="https://carpentries.github.io/workshop-template/#setup">англомовній версії шаблону сторінки семінару The Carpentries</a>.
 </p>
-
-{% comment %}
-Для онлайн-семінарів у розділі нижче надано:
-- інструкцію по встановленню клієнта Zoom
-- рекомендації щодо облаштування робочого простору слухачів, щоб вони могли слідувати інструкціям та відеоконференціям
-
-Якщо ви не використовуєте Zoom для свого онлайн-семінару, відредагуйте файл 
-`_includes/install_instructions/videoconferencing.html`
-, щоб додати відповідні інструкції зі встановлення.
-{% endcomment %}
-{% if online != "false" %}
-{% include install_instructions/videoconferencing.html %}
-{% endif %}
 
 {% comment %}
 Це інструкція з встановлення інструментів, які використовуються під час семінару.
