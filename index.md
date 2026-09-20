@@ -170,7 +170,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 {% if page.humandate %}
 <p id="when">
   <strong>Коли:</strong>
-  {{page.humandate}}.
+  {{page.humandate}}
   {% include workshop_calendar.html %}
 </p>
 {% endif %}
