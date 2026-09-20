@@ -176,7 +176,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 {% endif %}
 
 
-<strong>Семінар організовано спільно:</strong>
+<strong>Організатори семінару:</strong>
 </p>
 <ul>
  <li>	Інститут математики НАН України (Київ, Україна)</li>
