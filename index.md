@@ -241,7 +241,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 
 <p id="who-can-attend">
     <strong>Реєстрація:</strong>
-    Цей семінар відкритий для зареєстрованих учасників <a href="[https://sau.nmu.org.ua/ua/school_analysis.intelligence/2026/winschool26.php](https://docs.google.com/forms/d/e/1FAIpQLSfMWabXeA0Boo-009fFIGYURGydf2ETpcTa19HkkowSwE5B-Q/viewform)">семінар The Carpentries, Kyiv, 2026</a>.
+    Цей семінар відкритий для зареєстрованих учасників <a href="[https://docs.google.com/forms/d/e/1FAIpQLSfMWabXeA0Boo-009fFIGYURGydf2ETpcTa19HkkowSwE5B-Q/viewform">семінар The Carpentries, Kyiv, 2026</a>.
 </p>
 
 
