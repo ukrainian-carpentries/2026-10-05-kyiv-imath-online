@@ -236,7 +236,7 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
   {% else %}
   to-be-announced
   {% endif %}
-  для подальшої інформації.
+  для додаткової інформації.
 </p>
 
 <p id="who-can-attend">
