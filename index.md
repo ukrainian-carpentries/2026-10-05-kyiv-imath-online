@@ -92,7 +92,11 @@ EVENTBRITE
 {% endcomment %}
 
 <p>
-Проєкт <strong><a href="https://carpentries.org">Carpentries</a></strong> складається з <a
+На цьому семінарі ми будемо викладати роботу з командним рядком UNIX, контроль версій за допомогою Git, та програмування у системі компʼютерної алгебри GAP. Ми будемо використовувати навчальні матеріали від <a href="https://carpentries.org">The Carpentries</a></strong>, які були перекладені на українську мову учасниками <a href="https://ukrainian-carpentries.github.io/">Української Спільноти The Carpentries</a></li>.
+</p>
+
+<p>
+Проєкт <strong><a href="https://carpentries.org">The Carpentries</a></strong> складається з <a
 href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, та
 <a href="{{site.lc_site}}">Library Carpentry</a>, які обʼєднують спільноти їх інструкторів, тренерів, супроводжувачів, помічників і прихильників. Вони мають спільну місію — навчати науковців базовим навичкам досліджень за допомогою обчислювальних методів.
 <p align="center">
