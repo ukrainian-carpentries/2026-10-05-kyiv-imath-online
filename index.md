@@ -179,9 +179,9 @@ href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data
 <strong>Організатори семінару:</strong>
 </p>
 <ul>
- <li>	Інститут математики НАН України (Київ, Україна)</li>
+ <li>	<a href="https://www.imath.kiev.ua/">Інститут математики НАН України (Київ, Україна)</a></li>
  <li>	<a href="https://ukrainian-carpentries.github.io/">Українська Спільнота The Carpentries</a></li>
- <li> Університет Сент-Ендрюса (Сент-Ендрюс, Великобританія)</li>
+ <li> <a href="https://www.st-andrews.ac.uk/">Університет Сент-Ендрюса (Сент-Ендрюс, Великобританія)</a></li>
 </ul>
 
 
