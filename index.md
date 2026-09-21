@@ -362,7 +362,7 @@ https://pad.carpentries.org/YYYY-MM-DD-site
   Щоб використовувати цей користувацький розклад тут, замініть блок коду під   заголовком Розклад`<h2>` нижче на `{% include custom-schedule.html %}`.
   {% endcomment %}
 
-<h2 id="schedule">Розклад</h2>
+<h2 id="schedule">Розклад (можливі невеликі зміни)</h2>
 
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
