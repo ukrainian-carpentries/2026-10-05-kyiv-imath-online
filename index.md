@@ -318,7 +318,7 @@ https://pad.carpentries.org/YYYY-MM-DD-site
 Зверніть увагу, що у нас також є CodiMD (версія HackMD з відкритим вихідним кодом), доступна за адресою https://codimd.carpentries.org
 {% endcomment %}
 {% if page.collaborative_notes %}
-<h2 id="collaborative_notes">Нотатки про співпрацю</h2>
+<h2 id="collaborative_notes">Нотатки для співпраці</h2>
 
 <p>
 Ми використовуватимемо цей <a href="{{ page.collaborative_notes }}">спільний документ</a> для спілкування в чаті, створення нотаток і обміну URL-адресами та фрагментами коду.
